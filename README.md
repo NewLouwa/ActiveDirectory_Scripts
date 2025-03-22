@@ -1,72 +1,99 @@
-# Interactive AD User Creation Tool
+# Active Directory & Windows Server Management Scripts
 
-A powerful PowerShell script for interactively creating Active Directory users from CSV files.
+A comprehensive collection of PowerShell scripts for managing Active Directory and Windows Server environments. This repository contains various tools and utilities to automate common administrative tasks, enhance security, and improve efficiency in Windows Server management.
+
+## Repository Structure
+
+```
+├── AD-User-Management/     # Active Directory user management scripts
+│   ├── Interactive-Add_ADUser.ps1
+│   └── [More scripts to be added]
+├── AD-Group-Management/    # Active Directory group management scripts
+├── AD-Computer-Management/ # Computer account management scripts
+├── AD-Security/           # Security and compliance scripts
+├── Server-Management/     # General Windows Server management scripts
+└── Utilities/            # Helper functions and shared utilities
+```
 
 ## Features
 
-- Interactive CSV file selection with file browser
-- Automatic CSV delimiter detection
-- Multiple encoding support (UTF8, Unicode, UTF7, UTF32, ASCII, etc.)
-- Dynamic column mapping to AD attributes
-- Comprehensive error handling
-- Accent character handling
-- Password policy compliance
-- Detailed logging and reporting
-- Support for all major AD attributes
+### Active Directory Management
+- Interactive user creation with CSV import
+- Bulk user management
+- Group policy management
+- Security auditing
+- Account lifecycle management
+
+### Windows Server Management
+- Server configuration automation
+- Service management
+- Performance monitoring
+- Backup and recovery
+- Security hardening
 
 ## Prerequisites
 
-- Windows PowerShell 3.0 or higher
-- Active Directory PowerShell module (RSAT)
-- Domain user with appropriate permissions to create AD users
+- Windows Server 2012 R2 or later
+- PowerShell 3.0 or later
+- Active Directory PowerShell module
+- Appropriate administrative privileges
 
 ## Installation
 
-1. Clone or download this repository
-2. Ensure you have the Active Directory PowerShell module installed
-3. Run the script with appropriate permissions
+1. Clone this repository:
+```powershell
+git clone https://github.com/yourusername/AD-Windows-Server-Scripts.git
+```
+
+2. Navigate to the desired script directory:
+```powershell
+cd AD-Windows-Server-Scripts
+```
+
+3. Run the script with appropriate parameters:
+```powershell
+.\ScriptName.ps1
+```
 
 ## Usage
 
-1. Run the script:
+Each script in this collection is designed to be self-contained and includes its own documentation. Please refer to the individual script files for specific usage instructions and examples.
+
+### Example: Interactive AD User Creation
+
 ```powershell
 .\Interactive-Add_ADUser.ps1
 ```
 
-2. Follow the interactive prompts:
-   - Select your CSV file
-   - Confirm the CSV delimiter
-   - Choose the file encoding
-   - Map CSV columns to AD attributes
-   - Configure user creation settings
-   - Review and confirm the import
+This script provides an interactive interface for creating Active Directory users from CSV files, with features including:
+- Dynamic column mapping
+- Automatic delimiter detection
+- Multiple password options
+- Group membership management
+- Detailed reporting
 
-## CSV File Format
+## Contributing
 
-Your CSV file should contain columns that match the AD attributes you want to set. The script will help you map your CSV columns to the appropriate AD attributes.
-
-Required AD attributes:
-- GivenName (First Name)
-- Surname (Last Name)
-- SamAccountName (Login)
-
-## Error Handling
-
-The script includes comprehensive error handling for:
-- File access issues
-- CSV parsing errors
-- AD connection problems
-- User creation failures
-- Password policy violations
-
-## Logging
-
-The script creates detailed logs of all operations, including:
-- Successful user creations
-- Failed operations
-- Validation errors
-- Configuration details
+Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. 
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Support
+
+For support, please open an issue in the GitHub repository or contact the maintainers.
+
+## Disclaimer
+
+These scripts are provided as-is without any warranty. Always test scripts in a non-production environment before using them in production.
+
+## Author
+
+[Your Name/Organization]
+
+## Acknowledgments
+
+- Microsoft PowerShell Team
+- Active Directory Community
+- Windows Server Community 
