@@ -15,7 +15,7 @@
     Author: NewLouwa
     GitHub: https://github.com/NewLouwa
     Version: 1.0
-    Last Modified: 2024
+    Last Modified: 2025
 #>
 
 #region Helper Functions
