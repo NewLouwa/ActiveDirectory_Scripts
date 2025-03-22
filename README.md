@@ -42,12 +42,12 @@ A comprehensive collection of PowerShell scripts for managing Active Directory a
 
 1. Clone this repository:
 ```powershell
-git clone https://github.com/yourusername/AD-Windows-Server-Scripts.git
+git clone https://github.com/NewLouwa/ActiveDirectory_Scripts.git
 ```
 
 2. Navigate to the desired script directory:
 ```powershell
-cd AD-Windows-Server-Scripts
+cd ActiveDirectory_Scripts
 ```
 
 3. Run the script with appropriate parameters:
@@ -62,7 +62,7 @@ Each script in this collection is designed to be self-contained and includes its
 ### Example: Interactive AD User Creation
 
 ```powershell
-.\Interactive-Add_ADUser.ps1
+.\AD-User-Management\Interactive-Add_ADUser.ps1
 ```
 
 This script provides an interactive interface for creating Active Directory users from CSV files, with features including:
@@ -90,7 +90,7 @@ These scripts are provided as-is without any warranty. Always test scripts in a 
 
 ## Author
 
-[Your Name/Organization]
+[NewLouwa](https://github.com/NewLouwa)
 
 ## Acknowledgments
 
